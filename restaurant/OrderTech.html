@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OrderTech - AI That Takes Orders Just Like Your Best Staff</title>
+    <meta name="description"
+        content="We help restaurant owners reduce labor costs by 70% and increase revenues by 15% with AI-powered ordering system.">
+
+    <!-- SEO Meta Tags -->
+    <meta name="keywords"
+        content="restaurant AI, AI ordering system, restaurant automation, POS integration, order taking AI, restaurant technology">
+    <meta name="author" content="OrderTech">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ordertech.pro">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="OrderTech - AI That Takes Orders Just Like Your Best Staff">
+    <meta property="og:description"
+        content="Reduce labor costs by 70% and increase revenues by 15% with AI-powered ordering">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ordertech.pro">
+    <meta property="og:image" content="https://ordertech.pro/assets/OrderTech_Icon-D_gxjIDz.png">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="OrderTech - AI That Takes Orders Just Like Your Best Staff">
+    <meta name="twitter:description"
+        content="Reduce labor costs by 70% and increase revenues by 15% with AI-powered ordering">
+    <meta name="twitter:image" content="https://ordertech.pro/assets/OrderTech_Icon-D_gxjIDz.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://ordertech.pro/assets/OrderTech_Icon-D_gxjIDz.png">
+
+    <link rel="stylesheet" href="ordertech-styles.css">
+    <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.11/dist/dotlottie-wc.js" type="module"></script>
+</head>
+
+<body style="background-color: transparent;">
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <img src="https://ordertech.pro/OrderTech_Icon.png" alt="OrderTech" class="loading-logo">
+            <div class="loading-spinner"></div>
+            <p class="loading-text">Loading your AI ordering experience...</p>
+        </div>
+    </div>
+    
+    <!-- Background Canvas -->
+    <canvas class="bg-canvas" id="bgCanvas"></canvas>
+
+    <!-- Header/Navigation -->
+    <header class="header" role="banner">
+        <nav class="nav-container" role="navigation" aria-label="Main navigation">
+            <div class="logo">
+                <img src="https://ordertech.pro/OrderTech_Icon.png" alt="OrderTech Logo">
+            </div>
+            <ul class="nav-menu" role="menubar">
+                <li role="none"><a href="#features" role="menuitem">Features</a></li>
+                <li role="none" class="dropdown">
+                    <a href="#use-cases" role="menuitem" class="dropdown-toggle">Business types <span class="dropdown-arrow">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#restaurants">Restaurants</a></li>
+                        <li><a href="#cafes">Cafés</a></li>
+                        <li><a href="#fast-food">Fast Food</a></li>
+                        <li><a href="#food-trucks">Food Trucks</a></li>
+                    </ul>
+                </li>
+                   <li role="none" class="dropdown">
+                    <a href="#use-cases" role="menuitem" class="dropdown-toggle">Products <span class="dropdown-arrow">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#restaurants">Dashboard</a></li>
+                        <li><a href="#cafes">Restaurant Page</a></li>
+                        <li><a href="#fast-food">Orders Page </a></li>
+                        <li><a href="#food-trucks">Calls Page </a></li>
+                    </ul>
+                </li>
+                <li role="none" class="dropdown">
+                    <a href="#integrations" role="menuitem" class="dropdown-toggle">Integrations <span class="dropdown-arrow">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#pos">POS Systems</a></li>
+                        <li><a href="#delivery">Delivery Platforms</a></li>
+                        <li><a href="#payment">Payment Processors</a></li>
+                        <li><a href="#crm">CRM Tools</a></li>
+                    </ul>
+                </li>
+                <li role="none"><a href="#how-it-works" role="menuitem">How It Works</a></li>
+                <li role="none"><a href="#faq" role="menuitem">FAQ</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle theme">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                <div class="language-selector">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                    </svg>
+                    <span>EN</span>
+                </div>
+                <a href="#login" class="btn-login" aria-label="Login to your account">Login</a>
+                <a href="#demo" class="btn-demo" aria-label="Schedule a demo">Schedule a Demo</a>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Open mobile menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <img src="https://static.tildacdn.one/tild6632-6464-4233-b532-363935326237/header-bg.svg" alt="" class="hero-bg-svg">
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">AI That Takes Orders Just Like Your Best Staff</h1>
+                <p class="hero-subtitle">
+                   Cut labor costs by up to 70% and boost revenue by 15%—all without compromising order accuracy or customer experience. Achieve a full return on investment in just one month.
+                        </p>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-primary btn-large">Book a Call With Our Team</a>
+                    <a href="#how-it-works" class="btn btn-secondary btn-large">Learn How It Works</a>
+                    <a class="playvideo" href="https://res.cloudinary.com/dhlybgwnq/video/upload/f_auto:video,q_auto:good,w_1280,br_2500k/v1764859133/v1_02_04_1_ia8w4i.mp4" id="vidos" target="_blank" rel="noopener">
+                        <span class="hp_wv_icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                            </svg>
+                        </span>
+                        <span class="hp_wv_text">Watch video</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://optim.tildacdn.one/tild6638-3633-4732-a364-316437613137/-/resize/920x/-/format/webp/pos-white-index-new.png.webp" alt="OrderTech POS System" class="hero-product-image">
+            </div>
+        </div>
+        <div class="hero-stats">
+            <div class="stat-card">
+                <div class="stat-number">99.2%</div>
+                <div class="stat-label">Order Accuracy</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">40%+</div>
+                <div class="stat-label">Reduced Wait Times</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">15%</div>
+                <div class="stat-label">Increased Order Value</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">24/7</div>
+                <div class="stat-label">Service Availability</div>
+            </div>
+        </div>
+    </section>
+    
+
+   
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h3>Ordertech</h3>
+                    <p>Trusted by restaurant owners | Enterprise-grade security | 24/7 support</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#how-it-works">How It Works</a></li>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="#privacy">Privacy Policy</a></li>
+                            <li><a href="#terms">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Contact Us</h4>
+                        <p>contact@ordertech.ai</p>
+                        <p>+962 798 373 813</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Ordertech. All rights reserved.</p>
+                <p>Trusted by restaurant owners across the Middle East. Ready to transform your business.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="ordertech-script.js"></script>
+</body>
+
+</html>
